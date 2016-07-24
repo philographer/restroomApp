@@ -1,0 +1,60 @@
+<ion-modal-view>
+  <ion-header-bar class="dark">
+    <h1 class="title">상세보기</h1>
+    <button class="button button-clear ion-close" ng-click="closeModal(2)"></button>
+  </ion-header-bar>
+  <ion-content class="content-stable">
+    <div class="list card">
+      <div class="item item-avatar">
+        <img ng-src="img/restroom.png">
+        <label class="item item-input item-floating-label">
+          <span class="input-label"><b>이름</b></span>
+          <input type="text" placeholder="이름" ng-model="detail.name" readonly>
+        </label>
+      </div>
+      <div class="item item-body">
+        <label class="item item-input item-floating-label" ng-show="detail.address1">
+          <span class="input-label"><b>도로명주소</b></span>
+          <input type="text" placeholder="도로명주소" ng-model="detail.address1" readonly>
+        </label>
+        <label class="item item-input item-floating-label" ng-show="detail.address2">
+          <span class="input-label"><b>일반주소</b></span>
+          <input type="text" placeholder="일반주소" ng-model="detail.address2" readonly>
+        </label>
+        <label class="item item-input item-floating-label" ng-show="detail.division">
+          <span class="input-label"><b>종류</b></span>
+          <input type="text" placeholder="종류" ng-model="detail.division" readonly>
+        </label>
+        <label class="item item-input item-floating-label" ng-show="detail.agency">
+          <span class="input-label"><b>관리기관</b></span>
+          <input type="text" placeholder="관리기관" ng-model="detail.agency" readonly>
+        </label>
+        <label class="item item-input item-floating-label" ng-show="detail.contact">
+          <span class="input-label"><b>연락처</b></span>
+          <input type="text" placeholder="연락처" ng-model="detail.contact" readonly>
+        </label>
+        <label class="item item-input item-floating-label" ng-show="detail.open">
+          <span class="input-label"><b>개방시간</b></span>
+          <input type="text" placeholder="개방시간" ng-model="detail.open" readonly>
+        </label>
+      </div>
+    </div>
+    <br/>
+    <div class="list card" ng-repeat="obj in objs">
+      <div class="item item-avatar">
+        <img ng-src="img/icon-user-default.png">
+        <h2>{{obj['username']}}</h2>
+        <p>{{obj['created_at'] | date:'medium'}}</p>
+      </div>
+      <div class="item item-body">
+        <p>
+          {{obj['comment']}}
+        </p>
+        <p>{{obj['star']}} Star</p>
+      </div>
+    </div>
+    <div class="item tabs tabs-secondary tabs-icon-left">
+      <button class="button button-block button-assertive icon ion-share" ng-click="closeModal(2);">Close</button>
+    </div>
+  </ion-content>
+</ion-modal-view>

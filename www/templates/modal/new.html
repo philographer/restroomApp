@@ -1,0 +1,37 @@
+<ion-modal-view>
+  <ion-header-bar class="dark">
+    <h1 class="title">화장실 등록요청</h1>
+    <button class="button button-clear ion-close" ng-click="closeModal(3)"></button>
+  </ion-header-bar>
+  <ion-content class="content-stable">
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label"><b>화장실 이름</b></span>
+        <input type="text" placeholder="화장실 이름" ng-model="newRestroom.name">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label"><b>주소</b></span>
+        <input type="text" placeholder="주소" ng-model="newRestroom.address">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label"><b>종류(개방화장실,공중화장실)</b></span>
+        <input type="text" placeholder="종류(개방화장실, 공중화장실)" ng-model="newRestroom.division">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label"><b>관리기관</b></span>
+        <input type="text" placeholder="관리기관" ng-model="newRestroom.agency">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label"><b>연락처</b></span>
+        <input type="text" placeholder="연락처" ng-model="newRestroom.contact">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label"><b>개방시간</b></span>
+        <input type="text" placeholder="개방시간" ng-model="newRestroom.open">
+      </label>
+      <input type="hidden" placeholder="경위도" ng-model="newRestroom.latlng">
+      <button class="button button-block button-positive" ng-click="addRestroom(newRestroom)">Add Restroom</button>
+      <button class="button button-block button-assertive" ng-click="closeModal(3);">Close</button>
+    </div>
+  </ion-content>
+</ion-modal-view>

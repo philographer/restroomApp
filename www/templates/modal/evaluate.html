@@ -1,0 +1,33 @@
+
+<ion-modal-view>
+  <ion-header-bar class="dark">
+    <h1 class="title">평가하기</h1>
+    <button class="button button-clear ion-close" ng-click="closeModal(1)"></button>
+  </ion-header-bar>
+  <ion-content class="content-stable">
+    <div class="list">
+      <div style="text-align:center;">
+        <button ng-repeat='i in rate_num' class="button button-icon ion-ios-star-outline rate_possible"  ng-click='rateStar(i)'></button>
+      </div>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">이름</span>
+        <input type="text" placeholder="좌표" ng-model="comment_article.title" readonly>
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">주소</span>
+        <input type="text" placeholder="위치" ng-model="comment_article.address" readonly>
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">작성자 이름</span>
+        <input type="text" placeholder="작성자 이름" ng-model="comment_article.username" readonly>
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">코멘트</span>
+        <input type="text" placeholder="코멘트" ng-model="comment_article.comment">
+      </label>
+      <button class="button button-block button-positive" ng-click="addComment();">Add Comment</button>
+      <button class="button button-block button-assertive" ng-click="closeModal(1);">Close</button>
+    </div>
+  </ion-content>
+</ion-modal-view>
+

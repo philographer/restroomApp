@@ -1,0 +1,18 @@
+<ion-view ng-init="routeBoolean = true">
+  <ion-nav-title>
+    {{mapTitle}}
+  </ion-nav-title>
+  <ion-content has-header="true" data-tap-disabled="true" scroll="false">
+    <div id="map" center="center" markers="markers" style="min-height:100%;min-width:100%;" z-index="99999"></div>
+    <a href='javascript:void(0);' id="geolocate" class='button button-small button-calm ui-button' ng-click="navigate()">Find Nearest Restroom</a>
+    <button class="button ion-pinpoint button-calm crosshair" ng-class="routeBoolean == true ? 'routePlus slideUp' : 'routeMinus slideDown'" ng-click="centerNow()"></button>
+    <button class="button ion-navigate button-calm navigation" ng-class="routeBoolean == true ? 'routePlus slideUp' : 'routeMinus slideDown'" ng-click="navigate()"></button>
+    <div id='inputs'></div>
+    <div id='errors'></div>
+    <div id='directions' ng-class="routeBoolean == true ? 'directionPlus slideUp' : 'directionMinus slideDown'">
+      <div id='routes'></div>
+      <div id='instructions'></div>
+    </div>
+    <button id="route_button" class="button button-calm" ng-click="routeClick()" ng-class="routeBoolean == true ? 'ion-plus-circled routePlus slideUp' : 'ion-minus-circled routeMinus slideDown'">Route</button>
+  </ion-content>
+</ion-view>
