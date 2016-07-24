@@ -10,6 +10,9 @@ The Easiest way to find Restroom
 
 Restroom App used for Find nearest restroom written in Angular v1.5.3 and Ionic v1.3.1
 
+##Screen Shot
+![screenshot](./screenshot.gif)
+
 ## Essential Features
 
 - [x] Include App & Server communication logic
