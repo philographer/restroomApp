@@ -30,7 +30,7 @@ Restroom App used for Find nearest restroom written in Angular v1.5.3 and Ionic 
 - [x] Add Friend, Ranking, Gift (In my app, Add review, Request new restroom)
 - [x] Restrful Api Design (Node.js)
 - [ ] Push Notification
-- [x] Hybrid Application(IOS, Android)
+- [x] Hybrid Application(IOS, Android. But Only Play Store. Because App Store Dev cost too expensive)
 - [ ] CMS Service
 
 ## Used
