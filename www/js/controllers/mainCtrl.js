@@ -26,14 +26,8 @@ function mainCtrl($scope,$rootScope, $state, mainService, $cordovaOauth, session
     $rootScope.gps = true;
 
     $scope.facebookLogin = function(){
-
     }
-
-
-
-
   });
-
 }
 
     /*
