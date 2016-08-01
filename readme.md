@@ -4,6 +4,7 @@ The Easiest way to find Restroom
 
 
 [![App](https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.ionicframework.restroomapp468466)
+
 [![Ionic](https://img.shields.io/badge/ionic-v1.3.1-brightgreen.svg)](https://img.shields.io/badge/ionic-v1.3.1-brightgreen.svg)
 [![Angular](https://img.shields.io/badge/Angular-v1.5.3-green.svg)](https://img.shields.io/badge/Angular-v1.5.3-green.svg)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20IOS%20%7C%20Web-lightgrey.svg)](https://img.shields.io/badge/Platform-Android%20%7C%20IOS%20%7C%20Web-lightgrey.svg)
