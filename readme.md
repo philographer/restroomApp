@@ -1,9 +1,8 @@
+[![App](https://s32.postimg.org/gesczggad/google_play_badge.png)](https://play.google.com/store/apps/details?id=com.ionicframework.restroomapp468466)
+
 # Restroom App v1.0.0
 
 The Easiest way to find Restroom
-
-
-[![App](https://s32.postimg.org/gesczggad/google_play_badge.png)](https://play.google.com/store/apps/details?id=com.ionicframework.restroomapp468466)
 
 [![Ionic](https://img.shields.io/badge/ionic-v1.3.1-brightgreen.svg)](https://img.shields.io/badge/ionic-v1.3.1-brightgreen.svg)
 [![Angular](https://img.shields.io/badge/Angular-v1.5.3-green.svg)](https://img.shields.io/badge/Angular-v1.5.3-green.svg)
